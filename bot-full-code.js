@@ -29,7 +29,7 @@ let command = {
 
 function saveMessage(webhookData) {
   try {
-    let file = SpreadsheetApp.openById("1lDqThs8AXfPS9wpraw3c3VjJbyCAYjTOyyiU-Cz6FRg");
+    let file = SpreadsheetApp.openById("Код з URL таблиці Google");
     let sheet = file.getSheets()[0];
     
     let chatId = webhookData.message.chat.id;
@@ -104,6 +104,6 @@ function setWebhook() {
 }
 
 function authMe() {
-  let ss = SpreadsheetApp.openById("1lDqThs8AXfPS9wpraw3c3VjJbyCAYjTOyyiU-Cz6FRg");
+  let ss = SpreadsheetApp.openById("Код з URL таблиці Google");
   Logger.log(ss.getName());
 }
